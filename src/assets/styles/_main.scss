@@ -1,0 +1,29 @@
+@import "./variables";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.content {
+  overflow: scroll;
+  height: calc($contentHeight - ($contentSpacing * 2));
+
+  padding: $contentSpacing 0;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.clickable {
+  cursor: pointer !important;
+}

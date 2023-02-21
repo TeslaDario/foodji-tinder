@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    goBack
+  >
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <span>Favorites</span>
+</mat-toolbar>
+
+<div class="content">
+  <product-list [items]="favoritesProducts$ | async"></product-list>
+</div>
